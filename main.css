@@ -12,8 +12,9 @@ body {
   padding: 50px 0 0;
 }
 
-.clock-wrap {
-  background: url('./img/clock_bg.png') 50% no-repeat;
+.clock-circle {
+  border: 5px solid #333;
+  border-radius: 50%;
   height: 300px;
   margin: 0 auto;
   position: relative;
@@ -24,15 +25,29 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  background: url('./img/hand.png') 50% no-repeat;
+  background: #333;
   height: 140px;
-  margin: -114px 0 0 -5px;
+  margin: -140px 0 0 -2px;
+  transform-origin: 50% 100%;
+  width: 4px;
+}
+
+.clock-hand::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background: #333;
+  border-radius: 50%;
+  content: '';
+  height: 10px;
+  margin: -5px 0 0 -5px;
   width: 10px;
 }
 
 .clock-buttons {
   margin: 50px 0 0;
   text-align: center;
+  user-select: none;
 }
 
 .clock-value {

@@ -6,18 +6,14 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div id="clock">
-    <div class="clock-wrap">
-      <div class="clock-hand"></div>
-    </div>
-    <div class="clock-buttons">
-      <a class="button">Start</a>
-      <a class="button">Pause</a>
-      <a class="button">Stop</a>
-      <a class="button">Value</a>
-    </div>
-    <div class="clock-value">Current value: <span>0</span></div>
+  <div id="clock"></div>
+  <div class="clock-buttons">
+    <a class="button js-clock-btn" data-type="start">Start</a>
+    <a class="button js-clock-btn" data-type="pause">Pause</a>
+    <a class="button js-clock-btn" data-type="stop">Stop</a>
+    <a class="button js-clock-btn" data-type="value">Get value</a>
   </div>
+  <div class="clock-value">Current value: <span>0</span></div>
   <script src="main.js"></script>
 </body>
 </html>
